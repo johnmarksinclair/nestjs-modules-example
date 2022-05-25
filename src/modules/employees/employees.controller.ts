@@ -12,7 +12,7 @@ export class EmployeesController {
   }
 
   @Post()
-  createEmployee(@Body() newEmployee: EmployeeModel): string {
-    return this.employeesService.addNewEmployee(newEmployee);
+  createEmployee(@Body() newEmployee: EmployeeModel) {
+    this.employeesService.addNewEmployee(newEmployee);
   }
 }

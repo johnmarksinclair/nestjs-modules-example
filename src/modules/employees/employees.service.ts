@@ -9,8 +9,7 @@ export class EmployeesService {
     return this.employees;
   }
 
-  addNewEmployee(newEmployee: EmployeeModel): string {
+  addNewEmployee(newEmployee: EmployeeModel) {
     this.employees.push(newEmployee);
-    return 'success';
   }
 }
